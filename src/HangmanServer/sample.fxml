@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="469.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HangmanServer.Controller">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Server IP" />
+      <Label layoutX="257.0" layoutY="14.0" text="Port" />
+       <TextField fx:id="portField" layoutX="293.0" layoutY="10.0" prefHeight="25.0" prefWidth="83.0" text="9090" />
+      <TextField fx:id="serverIp" layoutX="66.0" layoutY="10.0" prefHeight="25.0" prefWidth="167.0" />
+      <Button fx:id="startButton" layoutX="386.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleStartButton" prefHeight="25.0" prefWidth="68.0" text="Start" />
+      <TextArea fx:id="logTextArea" layoutX="26.0" layoutY="50.0" prefHeight="230.0" prefWidth="373.0" />
+      <Label fx:id="errorLabel" layoutX="258.0" layoutY="33.0" prefHeight="17.0" prefWidth="125.0" textFill="RED">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
+      <Button layoutX="410.0" layoutY="58.0" mnemonicParsing="false" onAction="#showUsersButton" text="Users" />
+   </children>
+</AnchorPane>
